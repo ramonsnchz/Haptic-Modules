@@ -1,12 +1,12 @@
 
-#include "ESP_MICRO.h" 
+#include "ESP_MICRO.h" //Needed library to communicate with the esp8266 
 int counter=0;
-int pinA = 12; //Actually B
-int pinB = 14; //Actually A
+int pinA = 12; // This pin is the encoder pin B
+int pinB = 14; // This pin is the encoder pin A
 byte encoderSt=0;
 int Motor_Forward = 2;
 int Motor_Backward = 0;
-int goal; // Change this to a smaller value, calibrate it.
+int goal; // This is the desired position of the motor
 int error;
 byte sa = 0;
 byte sb = 0;
@@ -17,8 +17,8 @@ String action;
 
  void setup() { 
    Serial.begin (115200);
-   start("SanzNet","iloverobots");// Connect to wifi, enter your details here
-   pinMode (Motor_Forward,OUTPUT);
+   start("WiFi Network","Password");// Connect to wifi, enter your details here
+   pinMode (Motor_Forward,OUTPUT); 
    pinMode (Motor_Backward,OUTPUT);
    delay(50);
  } 
@@ -30,13 +30,12 @@ if (start_!=1){
   action = getPath();
   action.remove(0,1);
   goal = action.toInt();
-  returnThisInt(1); 
 }
 start_=1;
 byte a = digitalRead( pinA );
 byte b = digitalRead( pinB );
 byte st = (b<<1) | a;
-if ( encoderSt != st )
+if ( encoderSt != st ) 
 {
 if ( (encoderSt==0 && st==2) || (encoderSt==1 && st==0) || (encoderSt==2 && st==3) || (encoderSt==3 && st==1) ) counter-- ;
 else counter++;
@@ -49,7 +48,7 @@ encoderSt = st;
   sb=1;
   sa=1;
  }
- else if ((error>10) && (sc!=1)){ 
+ else if ((error>10) && (sc!=1)){
     digitalWrite(Motor_Forward, LOW);
     digitalWrite(Motor_Backward, HIGH);
     sc=1;

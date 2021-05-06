@@ -1,5 +1,4 @@
-#include "ESP_MICRO.h"
-
+#include "ESP_MICRO.h" //Needed library
 
 int pinERM = 14;
 int seconds;
@@ -8,7 +7,7 @@ String action;
 
 void setup() {
   Serial.begin (9600);
-  start("SanzNet","iloverobots");// Connect to wifi, enter your details here
+  start("WiFi Name","Password");// Connect to wifi, enter your details here
   pinMode(pinERM, OUTPUT);
   delay(50);
 }
@@ -20,8 +19,7 @@ void loop() {
     waitUntilNewReq();    // Waits until a new request from python come
     action = getPath();
     action.remove(0,1);
-    seconds = action.toInt();
-    returnThisInt(1); 
+    seconds = action.toInt(); // Signal from python, this tells the motor for the amount of time it needs to be On
     digitalWrite(pinERM, HIGH);
     delay(seconds);
     digitalWrite(pinERM, LOW);
