@@ -5,6 +5,8 @@ The haptic modules are a set of five modules that represent the most commonly us
 This repository contains a folder for each haptic module, containing the necessary CADs and scripts.
 
 Before downloading any Arduino or Python code, follow this tutorial "ESP8266 and Python Communication For Noobs" and install the "ESP_MICRO.h" on your ESP8266 Esp-03.  Note: Make sure that your ESP8266 and your computer are on the same network!
+
+Instructions on how to make the adhesive are also included in this repository. 
  
 # The necessary components for each module are the following:
 
