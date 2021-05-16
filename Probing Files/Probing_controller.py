@@ -1,4 +1,4 @@
-""" PY TO ESP (ERM CONTROLLER) """
+""" PY TO ESP (Probing CONTROLLER) """
 import time
 import urllib.request
 root_url = "IP Address of ESP8266" #SESP's url, ex: http://192.168.102 (Esp prints it to serial console when connected to wifi)

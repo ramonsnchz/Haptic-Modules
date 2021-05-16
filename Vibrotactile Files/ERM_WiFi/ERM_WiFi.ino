@@ -12,20 +12,13 @@ void setup() {
   delay(50);
 }
 
-void loop() {
-  
-  // Wifi
-  if (start_!=1){
-    waitUntilNewReq();    // Waits until a new request from python come
-    action = getPath();
-    action.remove(0,1);
-    seconds = action.toInt(); // Signal from python, this tells the motor for the amount of time it needs to be On
-    digitalWrite(pinERM, HIGH);
-    delay(seconds);
-    digitalWrite(pinERM, LOW);
-    delay(5);
-  }
-  start_ = 0;
-
-  
+void loop() { 
+waitUntilNewReq();    // Waits until a new request from python come
+action = getPath();
+action.remove(0,1);
+seconds = action.toInt(); // Signal from python, this tells the motor for the amount of time it needs to be On
+digitalWrite(pinERM, HIGH);
+delay(seconds);
+digitalWrite(pinERM, LOW);
+delay(5);
 }
