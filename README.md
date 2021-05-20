@@ -12,8 +12,8 @@ More information about the modules can be found in our paper which will be publi
 ### Materials
 
 **All modules require the following:**
-- ESP8266 Esp-03 Wi-Fi board
-- [3.3 voltage regulator](https://www.adafruit.com/product/2745)
+- WiFi module ([ESP8266 Esp-03](https://www.amazon.com/ESP8266-ESP-03-Wireless-Transceiver-Receive/dp/B00YHIGR62))
+- 3.3 voltage regulator ([Adafruit 2745](https://www.adafruit.com/product/2745))
 - [3.7V and 290mAh battery](https://tinycircuits.com/products/lithium-ion-polymer-battery-3-7v-290mah) to power the voltage regulator
 - An adhesive made following [these instructions]("Ecoflex Adhesive Procedure") and using these skin-safe materials from Smooth-On (note that trial size units are plenty of material):
 	- [Ecoflex Gel](https://www.smooth-on.com/products/ecoflex-gel/)
@@ -21,10 +21,11 @@ More information about the modules can be found in our paper which will be publi
 	- [Ecoflex 00-10](https://www.smooth-on.com/products/ecoflex-00-10/)
 
 **Vibrotactile module:**
-- 2222a Transistor
+- 2222a transistor
 - 2k Ohm resistor
 - ERM Motor: [TOTOT Mini-Vibration Motors 10mm x 2.7mm](https://www.amazon.com/TOTOT-Vibration-Button-Type-Vibrating-Appliances/dp/B07M5GN1YD)
 - [3.7V and 150mAh battery](https://tinycircuits.com/products/lithium-ion-polymer-battery-3-7v-150mah)
+These components allow us to make our own motor driver, similar to [this article](https://www.electronicsforu.com/electronics-projects/pancake-vibration-motors).
 
 **Skin-stretch modules:**
 - DC motor driver ([Adafruit DRV8871](https://www.adafruit.com/product/3190))
