@@ -25,6 +25,7 @@ More information about the modules can be found in our paper which will be publi
 - 2k Ohm resistor
 - ERM Motor: [TOTOT Mini-Vibration Motors 10mm x 2.7mm](https://www.amazon.com/TOTOT-Vibration-Button-Type-Vibrating-Appliances/dp/B07M5GN1YD)
 - [3.7V and 150mAh battery](https://tinycircuits.com/products/lithium-ion-polymer-battery-3-7v-150mah)
+
 These components allow us to make our own motor driver, similar to [this article](https://www.electronicsforu.com/electronics-projects/pancake-vibration-motors).
 
 **Skin-stretch modules:**
@@ -32,6 +33,7 @@ These components allow us to make our own motor driver, similar to [this article
 - Low Power 100:1 micro metal gear motor ([Polulu 2204](https://www.pololu.com/product/2204))
 - Magnetic encoder pair kit for micro metal gearmotors([Pololu 3081](https://www.pololu.com/product/3081))
 - Two [3.7V and 290mAh batteries](https://tinycircuits.com/products/lithium-ion-polymer-battery-3-7v-290mah) in series to power the Geared DC motor
+
 Note that *each* of the skin-stretch modules (Slider, Twister, and Rocker) require the above materials.
 
 **Probing module:**
